@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Alex Iacoboni</title>
+
+    <meta name="description"
+        content="A collection of backend, cybersecurity and full-stack projects built by Alex Iacoboni using Python, Flask, MySQL and JavaScript.">
+
+    <meta name="keywords"
+        content="Alex Iacoboni, projects, Python, Flask, MySQL, cybersecurity, portfolio">
+
+    <meta name="author" content="Alex Iacoboni">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0D1117">
+
+    <link rel="canonical" href="https://alexiacoboni.dev/projects.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Alex Iacoboni">
+    <meta property="og:description"
+        content="A collection of backend, cybersecurity and full-stack projects.">
+    <meta property="og:image" content="https://alexiacoboni.dev/images/og-image.png">
+    <meta property="og:url" content="https://alexiacoboni.dev/projects.html">
+    <meta property="og:site_name" content="Alex Iacoboni">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Alex Iacoboni">
+    <meta name="twitter:description"
+        content="A collection of backend, cybersecurity and full-stack projects.">
+    <meta name="twitter:image" content="https://alexiacoboni.dev/images/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Icon sprite: inlined (not fetched) so <use href="#icon-x">
+         resolves reliably in every browser, with zero extra
+         HTTP requests. -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+        <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="18" x2="20" y2="18"/>
+        </symbol>
+
+        <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+        </symbol>
+
+        <symbol id="icon-chevron-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 15l6-6 6 6"/>
+        </symbol>
+
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <path d="M14 6l6 6-6 6"/>
+        </symbol>
+
+        <symbol id="icon-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 4h6v6"/>
+            <line x1="20" y1="4" x2="10" y2="14"/>
+            <path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/>
+        </symbol>
+
+        <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v12"/>
+            <path d="M7 10l5 5 5-5"/>
+            <path d="M5 21h14"/>
+        </symbol>
+
+        <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+        </symbol>
+
+        <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+        </symbol>
+
+        <symbol id="icon-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 9l10-5 10 5-10 5-10-5z"/>
+            <path d="M6 11.5v4c0 1.5 3 3 6 3s6-1.5 6-3v-4"/>
+            <path d="M22 9v6"/>
+        </symbol>
+
+        <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="11" width="16" height="9" rx="2"/>
+            <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+        </symbol>
+
+        <symbol id="icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 6l-6 6 6 6"/>
+            <path d="M16 6l6 6-6 6"/>
+        </symbol>
+
+        <symbol id="icon-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2s4 2 4 8-4 12-4 12-4-8-4-12 4-8 4-8z"/>
+            <circle cx="12" cy="9" r="2"/>
+            <path d="M9 16l-2 4"/>
+            <path d="M15 16l2 4"/>
+        </symbol>
+
+        <symbol id="icon-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/>
+            <path d="M9 12l2 2 4-4"/>
+        </symbol>
+
+        <symbol id="icon-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="6" rx="1.5"/>
+            <rect x="3" y="14" width="18" height="6" rx="1.5"/>
+            <line x1="7" y1="7" x2="7.01" y2="7"/>
+            <line x1="7" y1="17" x2="7.01" y2="17"/>
+        </symbol>
+
+        <symbol id="icon-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="12" rx="2"/>
+            <line x1="8" y1="20" x2="16" y2="20"/>
+            <line x1="12" y1="16" x2="12" y2="20"/>
+        </symbol>
+
+        <symbol id="icon-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.5 6.5a4 4 0 1 0-5 5l-6 6 3 3 6-6a4 4 0 0 0 5-5l-2 2-2-2z"/>
+        </symbol>
+
+        <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="7" width="18" height="13" rx="2"/>
+            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+        </symbol>
+
+    </svg>
+
+    <!-- ======================================================
+                            HEADER
+    ======================================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    Alex<span>.</span>
+                </a>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+                <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="assets/cv.pdf" download class="btn-nav">
+                    Download CV
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="menu-overlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="assets/cv.pdf" download class="mobile-cv">
+            Download CV
+        </a>
+
+    </nav>
+
+    <!-- ======================================================
+                            PAGE HERO
+    ======================================================= -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="section-subtitle">PROJECTS</p>
+
+            <h1>Featured Projects</h1>
+
+            <p>
+                Some of the projects that best represent my learning
+                journey and technical interests.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+                        PROJECTS
+    ======================================================= -->
+
+    <section id="projects" aria-label="Projects list">
+
+        <div class="container">
+
+            <div class="projects-grid">
+
+                <!-- ================= FEATURED ================= -->
+
+                <article class="project-card featured-project">
+
+                    <div class="project-image">
+                        <img src="images/projects/cybersecurity/cybersecurity.png" alt="Cybersecurity Learning Platform"
+                            loading="lazy">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="featured-badge">FEATURED</span>
+
+                        <h3>Cybersecurity Learning Platform</h3>
+
+                        <p>
+                            Educational web platform developed for my
+                            bachelor's project that simulates SQL
+                            Injection, Cross-Site Scripting (XSS), Brute
+                            Force attacks and demonstrates defensive
+                            mechanisms through practical exercises.
+                        </p>
+
+                        <div class="project-stack">
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy">Python</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/flask/F0F6FC" alt="" loading="lazy">Flask</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/mysql/4479A1" alt="" loading="lazy">MySQL</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy">JavaScript</span>
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="https://github.com/alexiacoboni/Cybersecurity-Learning-Platform" target="_blank" rel="noopener" class="btn btn-primary">
+                                <img class="brand-icon" src="https://cdn.simpleicons.org/github/FFFFFF" alt="" loading="lazy">
+                                GitHub
+                            </a>
+
+                            <a href="https://cybersecurity-learning-platform-5y8y.onrender.com" target="_blank" rel="noopener" class="btn btn-secondary">
+                                Live Demo
+                                <svg class="icon" aria-hidden="true"><use href="#icon-external-link"></use></svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- ================= ATM ================= -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/projects/atm/dashboard2_user.jpeg" alt="ATM Banking System" loading="lazy">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>ATM Banking System</h3>
+
+                        <p>
+                            Banking application supporting authentication,
+                            deposits, withdrawals, transfers and account
+                            management built with Flask and MySQL.
+                        </p>
+
+                        <div class="project-stack">
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy">Python</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/flask/F0F6FC" alt="" loading="lazy">Flask</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/mysql/4479A1" alt="" loading="lazy">MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/alexiacoboni/atm-banking-system" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <img class="brand-icon" src="https://cdn.simpleicons.org/github/F0F6FC" alt="" loading="lazy">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- ================= TROLL GAME ================= -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/projects/TrollGame/trollgame.png" alt="Troll Game" loading="lazy">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Troll Game</h3>
+
+                        <p>
+                            A minimalist black-and-white platformer built with
+                            HTML5 Canvas and packaged as a desktop app with
+                            Electron. Each level trolls the player with a
+                            different twist — tilted cameras, fake controls,
+                            upside-down rendering and more.
+                        </p>
+
+                        <div class="project-stack">
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy">JavaScript</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/electron/47848F" alt="" loading="lazy">Electron</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy">HTML5 Canvas</span>
+                        </div>
+
+                        <a href="https://github.com/alexiacoboni/TrollGame" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <img class="brand-icon" src="https://cdn.simpleicons.org/github/F0F6FC" alt="" loading="lazy">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- ================= RPG ================= -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/projects/Legends of Eternia/rpg.png" alt="Legends of Eternia" loading="lazy">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Legends of Eternia</h3>
+
+                        <p>
+                            A 2D RPG game created entirely with HTML, CSS
+                            and Vanilla JavaScript, featuring movement,
+                            inventory, combat and progression systems.
+                        </p>
+
+                        <div class="project-stack">
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy">HTML</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/css3/1572B6" alt="" loading="lazy">CSS</span>
+                            <span><img class="tech-logo" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy">JavaScript</span>
+                        </div>
+
+                        <a href="https://github.com/alexiacoboni/Legends-of-Eternia" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <img class="brand-icon" src="https://cdn.simpleicons.org/github/F0F6FC" alt="" loading="lazy">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+                            FOOTER
+    ======================================================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <h3>Alex Iacoboni</h3>
+
+                <p>
+                    Computer Science Student • Backend Developer •
+                    Cybersecurity Enthusiast
+                </p>
+
+                <nav class="footer-nav" aria-label="Footer">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <p class="copyright">
+                    © 2026 Alex Iacoboni. Built with HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+        <svg class="icon" aria-hidden="true"><use href="#icon-chevron-up"></use></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
